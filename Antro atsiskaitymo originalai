@@ -66,3 +66,35 @@ int main()
     }
     return 0;
 }
+
+
+Trecias
+--------------------------------------------------
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sk;
+    int tikrinimoK;
+    int atvirkstinis = 0;
+
+    wcout << "Įveskite skaičių: "; cin >> sk;
+    wcout << endl;
+
+    tikrinimoK = sk;
+
+    while (tikrinimoK > 0)
+    {
+        atvirkstinis = atvirkstinis * 10 + tikrinimoK % 10;
+        tikrinimoK = tikrinimoK / 10;
+    }
+
+    if (atvirkstinis == sk) wcout << "Skaičius yra palindromas." << endl;
+    else wcout << "Skaičius nėra palindromas." << endl;
+
+    return 0;
+}
