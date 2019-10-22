@@ -1,0 +1,100 @@
+Originalai: 
+
+Pirmas
+-----------------------------
+
+#include <iostream>
+
+using namespace std;
+
+//Augustas Kazanavicius
+//Pirma uzduotis
+
+int main()
+{
+    int a=10, b=20, c=1;//Ivedam intervala ir atsakymo kintamaji
+    cout<<"Lyginiu skaiciu [10-20] sandauga: ";
+    while(a<=b){ //Viska apskaiciuojantis ciklas
+        c=a*c;
+        a=a+2;
+    }
+
+    cout<<c<<endl; //Isvedam atsakyma
+    return 0;
+}
+
+
+Antras
+-----------------------------
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+//Augustas Kazanavicius
+//Salygos sakiniai, 3 uzduotis
+
+int main()
+{
+    double a, b, c, p, s;
+    cout << "Iveskite pirma krastine: " << endl;//ivedam kintamuosius
+    cin>>a;
+    cout << "Iveskite antra krastine: " << endl;
+    cin>>b;
+    cout << "Iveskite trecia krastine: " << endl;
+    cin>>c;
+
+    p=(a+b+c)/2;
+    s=sqrt(p*(p-a)*(p-b)*(p-c));//ploto formule
+
+    if(a+c<b||a+b<c||c+b<a){
+        cout<<"Toks trikampis yra negalimas."<<endl;//nustatom, ar toks trikampis egzistuoja
+    }
+    else{
+        if(a==b && b==c){
+            cout<<"Lygiakrastis trikampis, ir jo plotas yra "<<s<<"cm"<<endl;//tikrinimas, ar lygiakrastis
+        }
+        else{
+            if(a!=b && b!=c && a!=c){
+            cout<<"Ivairiakrastis trikampis, ir jo plotas yra "<<s<<"cm"<<endl;//tikrinimas, ar ivairiakrastis
+        }
+        else{
+                cout<<"Lygiasonis trikampis, ir jo plotas yra "<<s<<"cm"<<endl;//atmestiniu budu, lygiasonis
+            }
+            }
+
+    }
+    return 0;
+}
+
+
+Trecias
+--------------------------------------------------
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sk;
+    int tikrinimoK;
+    int atvirkstinis = 0;
+
+    wcout << "Įveskite skaičių: "; cin >> sk;
+    wcout << endl;
+
+    tikrinimoK = sk;
+
+    while (tikrinimoK > 0)
+    {
+        atvirkstinis = atvirkstinis * 10 + tikrinimoK % 10;
+        tikrinimoK = tikrinimoK / 10;
+    }
+
+    if (atvirkstinis == sk) wcout << "Skaičius yra palindromas." << endl;
+    else wcout << "Skaičius nėra palindromas." << endl;
+
+    return 0;
+}
