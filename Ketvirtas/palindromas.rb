@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Programa turi nustatyti ar vartotojo ivestas skaicius yra palindromas ar ne.
+# Programa turi nustatyti ar skaicius yra palindromas ar ne.
 
 def palindrome?(skaicius)
   if skaicius == skaicius.to_s.reverse.to_i
