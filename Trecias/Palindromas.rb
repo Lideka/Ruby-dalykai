@@ -2,8 +2,8 @@
 
 # Programa turi nustatyti ar vartotojo ivestas skaicius yra palindromas ar ne.
 
-def palindrome?(sk)
-  if sk == sk.to_s.reverse.to_i
+def palindrome?(skaicius)
+  if skaicius == skaicius.to_s.reverse.to_i
     true
   else
     puts ' Ivestas skaicius ne palindromas'
@@ -11,5 +11,5 @@ def palindrome?(sk)
 end
 
 puts 'Iveskite tikrinama skaiciu: '
-sk = gets.to_i
-palindrome?(sk)
+skaicius = gets.to_i
+palindrome?(skaicius)
