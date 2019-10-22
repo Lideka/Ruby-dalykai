@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Testuojama ploto formule
+# Testuojama ploto skaiciavimo formule
 require 'minitest/autorun'
 
 describe 'Trikampis' do
