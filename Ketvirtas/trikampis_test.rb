@@ -2,14 +2,10 @@
 
 # Testuojama ploto skaiciavimo formule
 require 'minitest/autorun'
+require_relative 'trikampiai'
 
 describe 'Trikampis' do
   it 'Plotas' do
-    a = 5
-    b = 6
-    c = 7
-
-    p = (a + b + c) / 2
-    Integer.sqrt(p * (p - a) * (p - b) * (p - c)).must_equal 17
+    Trikampis.skaiciavimai(4, 5, 6).must_equal 6
   end
 end

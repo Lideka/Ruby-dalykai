@@ -1,6 +1,6 @@
-a = 5
-b = 6
-c = 7
+a = 4
+b = 5
+c = 6
 
 p=(a+b+c)/2
 s=Integer.sqrt(p*(p-a)*(p-b)*(p-c))
